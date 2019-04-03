@@ -1,0 +1,78 @@
+
+https://github.com/yuyang-1995/JavaDemo.git
+
+
+1//	
+编写一个Student类，包含name、gender、age、id、score属性，
+//分别为String、String、int、int、double类型。
+//	类中声明一个say方法，返回String类型，方法返回信息中包含所有属性值。
+//	在另一个StudentTest类中的main方法中，创建Student对象，
+	//并访问say方法和所有属性，并将调用结果打印输出。
+	
+2//
+编程题1
+定义一个丈夫Husband类，有姓名、年龄、妻子属性
+定义一个妻子Wife类，有姓名、年龄、丈夫属性
+丈夫类中有一个getInfo方法，其中，能显示自己的姓名，年龄，和他的妻子的姓名，年龄
+妻子类中有一个getInfo方法，其中，能显示自己的姓名，年龄，和她的丈夫的姓名，年龄
+定义一个测试类，创建妻子和丈夫对象，然后测试
+
+
+3//
+定义银行账户类Account，有属性：卡号cid，余额balance，所属用户Customer   
+银行账户类Account有方法：
+（1）getInfo()，返回String类型，返回卡的详细信息
+（2）取钱方法withdraw()，参数自行设计，如果取钱成功返回true，失败返回
+false
+（3）存钱方法save()，参数自行设计，如果存钱成功返回true，失败返回false
+   
+其中Customer类有姓名、身份证号、联系电话、家庭地址等属性
+    Customer类有方法say()，返回String类型，返回他的个人信息。
+
+在测试类Bank中创建银行账户类对象和用户类对象，并设置信息，与显示信息
+
+4//
+（1）声明一个圆柱体类型，
+（2）声明属性：底边的半径，和高
+（3）声明方法：
+A：方法的功能：在方法中打印圆柱体的详细信息
+	圆柱体的底边的半径是xxx，高是xxx，底面积是xxx，体积是xxx。
+B：方法的功能：返回底面积 
+C：方法的功能：返回体积
+D：方法的功能：为圆柱体的底边的半径，和高赋值
+E：方法的功能：为圆柱体的底边的半径，和高赋值，并返回赋值的结果
+	如果底边的半径或高为<=0，赋值失败，返回false，否则返回true
+（4）并测试	
+
+
+5//
+写一个人的类
+属性：名字，性别，年龄；提供无参的构造器和一个有参的构造器
+方法：（1）自我介绍的方法（2）吃饭的方法
+创建一个对象“张三”
+
+6//
+写一个课程类：
+属性：课程名；学时；任课老师；
+创建五个对象：“c语言”，“java编程”，“php网络编程”，“c++”，“数据结构”
+提供无参的构造器和一个有参的构造器
+
+
+7//
+按要求实现下列问题：实现一个名为Person的类和它的子类Employee，Employee有两个子类Faculty和Staff。具体要求如下：
+1）Person类中的属性有：姓名name（String类型），地址address（String类型），
+电话号码telphone（String类型）和电子邮件地址email（String类型）；
+2）Employee类中的属性有：办公室office（String类型），工资wage（double
+类型），受雇日期hiredate（String类型）；
+3）Faculty类中的属性有：学位degree（String类型），级别level（String类型）；
+4）Staff类中的属性有：职务称号duty（String类型）。
+5）现有对象Person p1 =new Faculty()和Person p2 =new Staff ()，请分别为p1的属性赋值“本科”和Staff类的duty赋值“职员”
+
+
+
+
+
+
+
+
+
