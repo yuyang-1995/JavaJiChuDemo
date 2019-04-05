@@ -3,71 +3,128 @@ https://github.com/yuyang-1995/JavaDemo.git
 
 
 1//	
-��дһ��Student�࣬����name��gender��age��id��score���ԣ�
-//�ֱ�ΪString��String��int��int��double���͡�
-//	��������һ��say����������String���ͣ�����������Ϣ�а�����������ֵ��
-//	����һ��StudentTest���е�main�����У�����Student����
-	//������say�������������ԣ��������ý����ӡ�����
+编写一个Student类，包含name、gender、age、id、score属性，
+//分别为String、String、int、int、double类型。
+//	类中声明一个say方法，返回String类型，方法返回信息中包含所有属性值。
+//	在另一个StudentTest类中的main方法中，创建Student对象，
+	//并访问say方法和所有属性，并将调用结果打印输出。
 	
 2//
-�����1
-����һ���ɷ�Husband�࣬�����������䡢��������
-����һ������Wife�࣬�����������䡢�ɷ�����
-�ɷ�������һ��getInfo���������У�����ʾ�Լ������������䣬���������ӵ�����������
-����������һ��getInfo���������У�����ʾ�Լ������������䣬�������ɷ������������
-����һ�������࣬�������Ӻ��ɷ����Ȼ�����
+编程题1
+定义一个丈夫Husband类，有姓名、年龄、妻子属性
+定义一个妻子Wife类，有姓名、年龄、丈夫属性
+丈夫类中有一个getInfo方法，其中，能显示自己的姓名，年龄，和他的妻子的姓名，年龄
+妻子类中有一个getInfo方法，其中，能显示自己的姓名，年龄，和她的丈夫的姓名，年龄
+定义一个测试类，创建妻子和丈夫对象，然后测试
 
 
 3//
-���������˻���Account�������ԣ�����cid�����balance�������û�Customer   
-�����˻���Account�з�����
-��1��getInfo()������String���ͣ����ؿ�����ϸ��Ϣ
-��2��ȡǮ����withdraw()������������ƣ����ȡǮ�ɹ�����true��ʧ�ܷ���
+定义银行账户类Account，有属性：卡号cid，余额balance，所属用户Customer   
+银行账户类Account有方法：
+（1）getInfo()，返回String类型，返回卡的详细信息
+（2）取钱方法withdraw()，参数自行设计，如果取钱成功返回true，失败返回
 false
-��3����Ǯ����save()������������ƣ������Ǯ�ɹ�����true��ʧ�ܷ���false
+（3）存钱方法save()，参数自行设计，如果存钱成功返回true，失败返回false
    
-����Customer��������������֤�š���ϵ�绰����ͥ��ַ������
-    Customer���з���say()������String���ͣ��������ĸ�����Ϣ��
+其中Customer类有姓名、身份证号、联系电话、家庭地址等属性
+    Customer类有方法say()，返回String类型，返回他的个人信息。
 
-�ڲ�����Bank�д��������˻��������û�����󣬲�������Ϣ������ʾ��Ϣ
+在测试类Bank中创建银行账户类对象和用户类对象，并设置信息，与显示信息
 
 4//
-��1������һ��Բ�������ͣ�
-��2���������ԣ��ױߵİ뾶���͸�
-��3������������
-A�������Ĺ��ܣ��ڷ����д�ӡԲ�������ϸ��Ϣ
-	Բ����ĵױߵİ뾶��xxx������xxx���������xxx�������xxx��
-B�������Ĺ��ܣ����ص���� 
-C�������Ĺ��ܣ��������
-D�������Ĺ��ܣ�ΪԲ����ĵױߵİ뾶���͸߸�ֵ
-E�������Ĺ��ܣ�ΪԲ����ĵױߵİ뾶���͸߸�ֵ�������ظ�ֵ�Ľ��
-	����ױߵİ뾶���Ϊ<=0����ֵʧ�ܣ�����false�����򷵻�true
-��4��������	
+（1）声明一个圆柱体类型，
+（2）声明属性：底边的半径，和高
+（3）声明方法：
+A：方法的功能：在方法中打印圆柱体的详细信息
+	圆柱体的底边的半径是xxx，高是xxx，底面积是xxx，体积是xxx。
+B：方法的功能：返回底面积 
+C：方法的功能：返回体积
+D：方法的功能：为圆柱体的底边的半径，和高赋值
+E：方法的功能：为圆柱体的底边的半径，和高赋值，并返回赋值的结果
+	如果底边的半径或高为<=0，赋值失败，返回false，否则返回true
+（4）并测试	
 
 
 5//
-дһ���˵���
-���ԣ����֣��Ա����䣻�ṩ�޲εĹ�������һ���вεĹ�����
-��������1�����ҽ��ܵķ�����2���Է��ķ���
-����һ������������
+写一个人的类
+属性：名字，性别，年龄；提供无参的构造器和一个有参的构造器
+方法：（1）自我介绍的方法（2）吃饭的方法
+创建一个对象“张三”
 
 6//
-дһ���γ��ࣺ
-���ԣ��γ�����ѧʱ���ο���ʦ��
-����������󣺡�c���ԡ�����java��̡�����php�����̡�����c++���������ݽṹ��
-�ṩ�޲εĹ�������һ���вεĹ�����
+写一个课程类：
+属性：课程名；学时；任课老师；
+创建五个对象：“c语言”，“java编程”，“php网络编程”，“c++”，“数据结构”
+提供无参的构造器和一个有参的构造器
 
 
 7//
-��Ҫ��ʵ���������⣺ʵ��һ����ΪPerson�������������Employee��Employee����������Faculty��Staff������Ҫ�����£�
-1��Person���е������У�����name��String���ͣ�����ַaddress��String���ͣ���
-�绰����telphone��String���ͣ��͵����ʼ���ַemail��String���ͣ���
-2��Employee���е������У��칫��office��String���ͣ�������wage��double
-���ͣ����ܹ�����hiredate��String���ͣ���
-3��Faculty���е������У�ѧλdegree��String���ͣ�������level��String���ͣ���
-4��Staff���е������У�ְ��ƺ�duty��String���ͣ���
-5�����ж���Person p1 =new Faculty()��Person p2 =new Staff ()����ֱ�Ϊp1�����Ը�ֵ�����ơ���Staff���duty��ֵ��ְԱ��
+按要求实现下列问题：实现一个名为Person的类和它的子类Employee，Employee有两个子类Faculty和Staff。具体要求如下：
+1）Person类中的属性有：姓名name（String类型），地址address（String类型），
+电话号码telphone（String类型）和电子邮件地址email（String类型）；
+2）Employee类中的属性有：办公室office（String类型），工资wage（double
+类型），受雇日期hiredate（String类型）；
+3）Faculty类中的属性有：学位degree（String类型），级别level（String类型）；
+4）Staff类中的属性有：职务称号duty（String类型）。
+5）现有对象Person p1 =new Faculty()和Person p2 =new Staff ()，请分别为p1的属性赋值“本科”和Staff类的duty赋值“职员”
 
+8//
+定义一个person类，属性如下：
+（1）身份证号，性别，姓名，年龄，户籍，出生日期（Data类型，需要引用java.uitl.Data）功能：
+（2）自我介绍：介绍格式：（toString）
+身份证号+姓名+户籍
+（3）提供对象比较equals方法，只要身份证号+姓名相同就认为对象相等
+
+
+9//
+创建一个汽车类（Car）
+（1）为其定义两个属性：颜色和型号。每个属性都使用private进行封装，为每个属性设置set、get方法。
+（2）为该类创建两个构造方法。第一个为无参的构造方法。第二个为带参构造方法
+（3）重写toString方法，通过toString输出汽车信息。
+（4）重写equals方法，如果汽车的颜色和型号相同就认为是同一辆车。
+（5）实例化两个对象，输出两个对象的信息，比较两个对象是否是同一个对象。
+
+10//
+定义员工类Employee，包含姓名、工号和工资，包含计算奖金方法bonus，普通员工和经理都是员工，
+计算奖金的方法为工资*奖金系数，普通员工的奖金系数为1.5（常量），经理为2（常量），
+分别实现bonus方法，创建对象测试。
+
+
+
+11//
+
+创建两个分线程，让其中一个线程输出1-100之间的偶数，另一
+个线程输出1-100之间的奇数
+
+12//
+银行有一个账户。
+有两个储户分别向同一个账户存3000元，每次存1000，存3次。每次存完打
+印账户余额。
+问题：该程序是否有安全问题，如果有，如何解决？
+【提示】
+
+
+13//
+使用两个线程打印 1-100。线程1, 线程2 交替打印
+
+
+14//
+生产者(Productor)将产品交给店员(Clerk)，而消费者(Customer)从店员处
+取走产品，店员一次只能持有固定数量的产品(比如:20），如果生产者试图
+生产更多的产品，店员会叫生产者停一下，如果店中有空位放产品了再通
+知生产者继续生产；如果店中没有产品了，店员会告诉消费者等一下，如
+果店中有产品了再通知消费者来取走产品。
+这里可能出现两个问题：
+生产者比消费者快时，消费者会漏掉一些数据没有取到。
+消费者比生产者快时，消费者会取相同的数据。
+
+15//
+练 习 模拟银行取钱的问题1.定义一个Account类1）该Account类封装了账户编号（String）
+和余额（double）两个属性2）设置相应属性的getter和setter方法
+3）提供无参和有两个参数的构造器 
+4）系统根据账号判断与用户是否匹配，需提供hashCode()和equals()方法的重写2
+.提供两个取钱的线程类：小明、小明’s wife1）提供了Account类的account属性和double类的取款额的属性
+2）提供带线程名的构造器3）run()方法中提供取钱的操作3.在主类中创建线程进行测试。考虑线程安全问题。
 
 
 
